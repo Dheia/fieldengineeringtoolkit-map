@@ -1,0 +1,15 @@
+columns:
+    plandate:
+        label: plandate
+        type: text
+        sortable: true
+    status:
+        label: status
+        type: text
+        sortable: true
+    address:
+        label: Address
+        type: text
+        sortable: true
+        select: address
+        relation: customer

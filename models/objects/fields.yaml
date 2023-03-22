@@ -1,0 +1,95 @@
+fields:
+    object_name:
+        label: Name
+        span: auto
+        type: text
+    customer:
+        label: customer
+        nameFrom: customer
+        descriptionFrom: customer
+        select: name
+        span: auto
+        type: relation
+    object_description:
+        label: Description
+        size: small
+        span: full
+        type: richeditor
+tabs:
+    fields:
+        object_location:
+            label: Location
+            span: auto
+            type: text
+            comment: 'Write as 51.57419,5.18047 because of the frontend URL'
+            tab: Location
+        object_parameters:
+            label: 'GPS Parameters'
+            size: small
+            language: php
+            span: auto
+            type: codeeditor
+            tab: Location
+        object_maxzoom:
+            label: 'Zoom Level'
+            span: auto
+            default: '16'
+            type: number
+            tab: Location
+        connection_hint:
+            label: 'An object has one parent object, but can have multiple connections.'
+            span: full
+            type: hint
+            tab: Connections
+        relatedObjects:
+            label: 'Connected Object'
+            nameFrom: object_name
+            descriptionFrom: 'Connected Object'
+            select: object_name
+            span: auto
+            type: relation
+            tab: Connections
+        parentObject:
+            label: 'Parent Object'
+            nameFrom: object_name
+            descriptionFrom: 'Parent Object'
+            emptyOption: 'Select Object'
+            select: object_name
+            span: auto
+            type: relation
+            tab: Connections
+        photos:
+            label: 'File upload'
+            span: auto
+            mode: file
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            type: fileupload
+            tab: Photos
+        object_type:
+            label: Type
+            span: auto
+            options:
+                Hardware: Hardware
+                Software: Software
+                Other: Other
+            showSearch: true
+            type: dropdown
+            tab: Details
+        object_brand:
+            label: Brand
+            span: auto
+            type: text
+            tab: Details
+        object_model:
+            label: Model
+            span: auto
+            type: text
+            tab: Details
+        object_archive:
+            label: Archive
+            span: auto
+            type: switch
+            tab: Details

@@ -1,0 +1,18 @@
+fields:
+    subject:
+        label: Subject
+        span: auto
+        type: text
+    ip_address:
+        label: 'Ip address'
+        span: auto
+        type: text
+    content_html:
+        label: 'Content html'
+        span: full
+        size: large
+        type: richeditor
+    created_at:
+        label: 'Created at'
+        span: auto
+        type: text

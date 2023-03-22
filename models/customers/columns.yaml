@@ -1,0 +1,22 @@
+columns:
+    name:
+        label: name
+        type: text
+    surname:
+        label: surname
+        type: text
+    address:
+        label: address
+        type: text
+    zipcode:
+        label: zipcode
+        type: text
+    city:
+        label: city
+        type: text
+    phone:
+        label: phone
+        type: text
+    mail:
+        label: mail
+        type: text

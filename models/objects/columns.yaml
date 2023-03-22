@@ -1,0 +1,55 @@
+columns:
+    object_id:
+        label: ID
+        type: number
+        invisible: true
+    object_name:
+        label: Name
+        type: text
+        searchable: true
+        sortable: true
+    object_location:
+        label: Location
+        type: text
+        sortable: true
+    object_description:
+        label: Description
+        type: text
+        invisible: true
+    object_type:
+        label: Type
+        type: text
+        searchable: true
+        sortable: true
+    object_brand:
+        label: Brand
+        type: text
+        searchable: true
+        sortable: true
+    object_model:
+        label: Model
+        type: text
+        searchable: true
+    object_archive:
+        label: Archive
+        type: switch
+        sortable: true
+    name:
+        label: Customer
+        type: text
+        searchable: true
+        sortable: true
+        select: name
+        relation: customer
+    object_created_at:
+        label: 'Created at'
+        type: datetime
+        sortable: true
+    object_updated_at:
+        label: 'Updated at'
+        type: datetime
+        sortable: true
+    object_deleted_at:
+        label: 'Deleted at'
+        type: datetime
+        invisible: true

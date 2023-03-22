@@ -1,0 +1,55 @@
+{% set Objects = __SELF__.item %}
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+{% for item in Objects %}
+
+<h3><strong>{{ item.object_name }}</strong></h3>
+<ul class="list-group list-group-horizontal">
+  <li class="list-group-item" style="width: -webkit-fill-available;">
+    <p>
+        <strong>Customer:</strong> {{ item.object_customer }}<br>
+        <strong>GPS:</strong> {{ item.object_location }}<br>
+        <strong>Type:</strong> {{ item.object_type }}<br>
+        <strong>Brand:</strong> {{ item.object_brand }}<br>
+        <strong>Model:</strong> {{ item.object_model }}<br>
+    </p>
+  </li>
+  <li class="list-group-item" style="width: -webkit-fill-available;">
+    Description: {{ item.object_description|raw }}<br>
+  </li>
+  <li class="list-group-item" style="width: -webkit-fill-available;">
+    <div>
+        Geo Location:<br>
+        <div id="map{{ item.id }}" style="width: 320px; height: 180px; border: 1px solid lightgray;"></div>
+    </div>
+  </li>
+
+  <script>
+    var map = L.map('map{{ item.id }}').setView([{{ item.object_location }}], {{ item.object_maxzoom }});
+  
+    var tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    	maxZoom: 19,
+    	attribution: ''
+    }).addTo(map);
+
+    var circle = L.circle([{{ item.object_location }}], {{ item.object_parameters|raw }}).addTo(map);
+
+    var popup = L.popup()
+    .setLatLng([{{ item.object_location }}])
+    .setContent("{{ item.object_name }}")
+    .openOn(map);
+
+  </script>
+</ul>
+{% else %}
+
+<div class="no-data">
+  <div class="alert alert-danger" role="alert">
+    <i><i class="bi bi-exclamation-triangle"></i> Geen Objecten gevonden</i>
+  </div>
+</div>
+
+{% endfor %}
+

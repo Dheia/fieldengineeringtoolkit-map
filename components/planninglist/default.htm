@@ -1,0 +1,24 @@
+
+{% for item in plan %}
+
+<div class="card mt-2">
+    <div class="card-body">
+        <h5 class="card-title">{{ item.customer.address }}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+            {{ carbon(item.plandate)}} 
+            - Engineer: {{ item.engineer.name }} 
+            - Status: {{ item.status }}</h6>
+        <p class="card-text">Customer: {{ item.customer.name }} {{ item.customer.surname }} - <a href="tel://{{ item.customer.phone }}">{{ item.customer.phone }}</a></p>
+        <p class="card-text">Description: {{ item.description|raw }}</p>
+    </div>
+</div>
+
+{% else %}
+
+<div class="no-data">
+  <div class="alert alert-danger" role="alert">
+    <i><i class="bi bi-exclamation-triangle"></i> No items found, get some coffee.</i>
+  </div>
+</div>
+
+{% endfor %}

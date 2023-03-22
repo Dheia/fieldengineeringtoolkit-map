@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+<div id="mapoverview" style="height: 700px;"></div>
+
+{% set Maps = __SELF__.item %}
+{% set Objects = __SELF__.assets %}
+
+{% for item in Maps %}
+
+<script>
+
+  var map = L.map('mapoverview').setView([{{ item.maps_location }}], {{ item.maps_zoomlevel }});
+
+  var tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: ''
+  }).addTo(map);
+
+</script>
+
+      {% for assets in Objects %}
+        <script>
+        
+          var circle = L.circle([{{ assets.object_location }}],
+            {{ assets.parameters|raw }}
+          )
+          .addTo(map)
+          .bindPopup("{{ assets.description|raw }}");
+      
+        </script>
+      {% endfor %}
+
+<p class="fw-light text-center">{{ item.maps_name }}</p>
+
+{% else %}
+
+<div class="no-data">
+  <div class="alert alert-danger" role="alert">
+    <i><i class="bi bi-exclamation-triangle"></i> Geen Objecten gevonden</i>
+  </div>
+</div>
+
+{% endfor %}

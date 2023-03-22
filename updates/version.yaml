@@ -1,0 +1,22 @@
+2.0.1:
+    - 'Initialize plugin.'
+2.0.2:
+    - builder_table_create_openmindedit_fieldengineeringtoolkit_customers.php
+    - builder_table_create_openmindedit_fieldengineeringtoolkit_engineers.php
+    - builder_table_create_openmindedit_fieldengineeringtoolkit_maps.php
+    - builder_table_create_openmindedit_fieldengineeringtoolkit_objects.php
+    - builder_table_create_openmindedit_fieldengineeringtoolkit_planning.php
+    - builder_table_create_openmindedit_fieldengineeringtoolkit_related_objects.php
+2.0.3:
+    - 'Update readme File with latest information.'
+    - 'Now creating Multisite support'
+2.0.4:
+    - 'Added Due status to Planning'
+    - 'Updated table planning plandate type'
+    - 'Added Status to Planning Component'
+    - 'Added auto due to Plandate'
+    - 'Added 30 day time for planning, the Closed status'
+    - 'Relationship between objects realized, this is the basis of the poligon connections on the map'
+    - 'Added the ability to add multiple photos to an Object'
+    - 'Rearranging object fields'
+    - 'Dependencie Renatio.FormBuilder added'
