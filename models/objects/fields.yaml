@@ -74,7 +74,10 @@ tabs:
             options:
                 Hardware: Hardware
                 Software: Software
-                Other: Other
+                Modem: Modem
+                Amplifier: Amplifier
+                'Street Cabinet': 'Street Cabinet'
+                'Something Other': 'Something Other'
             showSearch: true
             type: dropdown
             tab: Details

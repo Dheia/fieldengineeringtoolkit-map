@@ -3,8 +3,8 @@ modelClass: OpenMindedIT\FieldEngineeringToolkit\Models\Objects
 list: $/openmindedit/fieldengineeringtoolkit/models/objects/columns.yaml
 recordUrl: 'openmindedit/fieldengineeringtoolkit/objects/update/:id'
 noRecordsMessage: 'backend::lang.list.no_records'
-recordsPerPage: 20
-showSetup: true
+recordsPerPage: 100
+showSetup: False
 showCheckboxes: true
 toolbar:
     buttons: list_toolbar

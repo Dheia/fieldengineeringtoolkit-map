@@ -7,11 +7,4 @@ columns:
         label: location
         type: text
         sortable: true
-    maps_created_at:
-        label: Created
-        type: datetime
-        sortable: true
-    maps_updated_at:
-        label: 'Last update'
-        type: datetime
-        sortable: true
+
