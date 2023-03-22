@@ -1,7 +1,7 @@
-<?php namespace Nielsvandendries\Fieldengineeringtoolkit\Components;
+<?php namespace OpenMindedIT\FieldEngineeringToolkit\Components;
 
 use Cms\Classes\ComponentBase;
-use Nielsvandendries\Fieldengineeringtoolkit\Models\Planning;
+use OpenMindedIT\FieldEngineeringToolkit\Models\Planning;
 use Carbon\Carbon;
 
 class Planninglist extends ComponentBase

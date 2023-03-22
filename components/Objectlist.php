@@ -1,7 +1,7 @@
-<?php namespace Nielsvandendries\Fieldengineeringtoolkit\Components;
+<?php namespace OpenMindedIT\FieldEngineeringToolkit\Components;
 
 use Cms\Classes\ComponentBase;
-use Nielsvandendries\Fieldengineeringtoolkit\Models\Objects;
+use OpenMindedIT\FieldEngineeringToolkit\Models\Objects;
 
 class Objectlist extends ComponentBase
 {

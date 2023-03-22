@@ -3,7 +3,7 @@
 use Schema;
 use October\Rain\Database\Updates\Migration;
 
-class BuilderTableCreateNielsvandendriesFieldengineeringtoolkitRelatedObjects extends Migration
+class BuilderTableCreateOpenMindedITFieldEngineeringToolkitRelatedObjects extends Migration
 {
     public function up()
     {

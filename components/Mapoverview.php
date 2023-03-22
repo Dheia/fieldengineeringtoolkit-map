@@ -1,8 +1,8 @@
-<?php namespace Nielsvandendries\Fieldengineeringtoolkit\Components;
+<?php namespace OpenMindedIT\FieldEngineeringToolkit\Components;
 
 use Cms\Classes\ComponentBase;
-use Nielsvandendries\Fieldengineeringtoolkit\Models\Maps;
-use Nielsvandendries\Fieldengineeringtoolkit\Models\Objects;
+use OpenMindedIT\FieldEngineeringToolkit\Models\Maps;
+use OpenMindedIT\FieldEngineeringToolkit\Models\Objects;
 use Request;
 
 class Mapoverview extends ComponentBase

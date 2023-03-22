@@ -9,9 +9,9 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            '\Nielsvandendries\Fieldengineeringtoolkit\Components\Objectlist' => 'Objectlist',
-            '\Nielsvandendries\Fieldengineeringtoolkit\Components\Mapoverview' => 'Mapoverview',
-            '\Nielsvandendries\Fieldengineeringtoolkit\Components\Planninglist' => 'Planninglist',
+            '\OpenMindedIT\FieldEngineeringToolkit\Components\Objectlist' => 'Objectlist',
+            '\OpenMindedIT\FieldEngineeringToolkit\Components\Mapoverview' => 'Mapoverview',
+            '\OpenMindedIT\FieldEngineeringToolkit\Components\Planninglist' => 'Planninglist',
         ];
     }
 
