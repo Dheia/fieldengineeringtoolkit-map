@@ -24,6 +24,9 @@ class BuilderTableCreateOpenMindedITFieldEngineeringToolkitObjects extends Migra
             $table->string('customer_id')->nullable();
             $table->string('customers_id')->nullable();
             $table->smallInteger('parent_id')->nullable();
+            $table->string('transport')->nullable();
+            $table->string('port')->nullable();
+            $table->string('community')->nullable();
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
             $table->timestamp('deleted_at')->nullable();

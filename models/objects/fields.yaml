@@ -96,3 +96,28 @@ tabs:
             span: auto
             type: switch
             tab: Details
+        transport:
+            label: 'Transport Protocol'
+            options:
+                UDP: UDP
+                TCP: TCP
+            showSearch: true
+            span: left
+            default: UDP
+            type: dropdown
+            tab: SNMP
+        port:
+            label: 'Protocol Port'
+            span: left
+            default: ''
+            required: 0
+            type: number
+            comment: 'default is 161'
+            tab: SNMP
+        community:
+            label: 'Community String'
+            span: left
+            default: public
+            type: text
+            comment: 'default is "public"'
+            tab: SNMP
