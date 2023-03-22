@@ -96,6 +96,12 @@ tabs:
             span: auto
             type: switch
             tab: Details
+        host:
+            label: Hostname
+            span: left
+            type: text
+            comment: 'IP or DNS name'
+            tab: SNMP
         transport:
             label: 'Transport Protocol'
             options:
