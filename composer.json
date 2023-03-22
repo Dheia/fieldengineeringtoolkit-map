@@ -10,5 +10,6 @@
         }
     ],
     "require": {
+        "renatio/formbuilder-plugin": "^3.1"
     }
 }
