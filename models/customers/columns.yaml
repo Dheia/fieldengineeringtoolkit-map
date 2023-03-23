@@ -20,3 +20,6 @@ columns:
     mail:
         label: mail
         type: text
+    company:
+        label: Company
+        type: text
