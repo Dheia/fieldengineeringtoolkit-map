@@ -1,4 +1,8 @@
 fields:
+    company:
+        label: Company
+        span: full
+        type: text
     name:
         label: Name
         span: auto

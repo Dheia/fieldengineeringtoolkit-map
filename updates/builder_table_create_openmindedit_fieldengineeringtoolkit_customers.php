@@ -12,6 +12,7 @@ class BuilderTableCreateOpenMindedITFieldEngineeringToolkitCustomers extends Mig
             $table->engine = 'InnoDB';
             $table->increments('id')->unsigned();
             $table->string('name');
+            $table->string('company');
             $table->string('surname');
             $table->string('address');
             $table->string('zipcode');

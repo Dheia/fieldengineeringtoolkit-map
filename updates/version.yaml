@@ -23,3 +23,5 @@
     - 'Added Formhistory with Renation.Formbuilder'
     - 'Added Telegram API in preperation of notifications'
     - 'added github collaborators'
+2.0.5:
+    - 'Added company to customers'
