@@ -96,6 +96,11 @@ tabs:
             span: auto
             type: switch
             tab: Details
+        beta:
+            label: 'Beta, Werkt nog niet'
+            span: full
+            type: hint
+            tab: SNMP
         host:
             label: Hostname
             span: left
