@@ -38,3 +38,15 @@ fields:
         'off': 'no'
         default: 1
         type: switch
+    objectsection:
+        label: Objects
+        span: full
+        type: section
+    relatedObjects:
+        label: ''
+        nameFrom: object_name
+        descriptionFrom: description
+        select: object_name
+        span: full
+        readOnly: 1
+        type: relation
