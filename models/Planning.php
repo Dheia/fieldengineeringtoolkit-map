@@ -33,6 +33,10 @@ class Planning extends Model
         'engineer' => Engineers::class
     ];
 
+    public $belongsTo = [
+        'engineer' => ['OpenMindedIT\FieldEngineeringToolkit\Models\Engineers']
+    ];
+
     public function beforeSave()
     {
         if ($this->plandate) {

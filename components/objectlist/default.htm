@@ -9,19 +9,21 @@
 <ul class="list-group list-group-horizontal">
   <li class="list-group-item" style="width: -webkit-fill-available;">
     <p>
-        <strong>Customer:</strong> {{ item.object_customer }}<br>
+        <!-- <strong>Customer:</strong> {{ item.company }}<br> -->
         <strong>GPS:</strong> {{ item.object_location }}<br>
         <strong>Type:</strong> {{ item.object_type }}<br>
         <strong>Brand:</strong> {{ item.object_brand }}<br>
         <strong>Model:</strong> {{ item.object_model }}<br>
+        <strong>IP Address:</strong> {{ item.ip }}<br>
+        <strong>MAC Address:</strong> {{ item.mac }}<br>
     </p>
   </li>
   <li class="list-group-item" style="width: -webkit-fill-available;">
-    Description: {{ item.object_description|raw }}<br>
+    <strong>Description:</strong> {{ item.object_description|raw }}<br>
   </li>
   <li class="list-group-item" style="width: -webkit-fill-available;">
     <div>
-        Geo Location:<br>
+        <strong>Geo Location:</strong><br>
         <div id="map{{ item.id }}" style="width: 320px; height: 180px; border: 1px solid lightgray;"></div>
     </div>
   </li>

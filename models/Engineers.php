@@ -27,7 +27,7 @@ class Engineers extends Model
     public $rules = [
     ];
 
-    // public $belongsTo = [
-    //     'plan' => Planning::class
-    // ];
+    public $hasMany = [
+        'planning' => ['OpenMindedIT\FieldEngineeringToolkit\Models\Planning', 'key' => 'id'],
+    ];
 }

@@ -7,7 +7,7 @@ fields:
         label: customer
         nameFrom: customer
         descriptionFrom: customer
-        select: name
+        select: company
         span: auto
         type: relation
     object_description:
@@ -15,6 +15,11 @@ fields:
         size: small
         span: full
         type: richeditor
+    object_archive:
+        label: Archive
+        span: auto
+        type: switch
+        tab: Details
 tabs:
     fields:
         object_location:
@@ -91,10 +96,15 @@ tabs:
             span: auto
             type: text
             tab: Details
-        object_archive:
-            label: Archive
+        ip:
+            label: 'Ip address'
             span: auto
-            type: switch
+            type: text
+            tab: Details
+        mac:
+            label: 'MAC address'
+            span: auto
+            type: text
             tab: Details
         beta:
             label: 'Beta, Werkt nog niet'

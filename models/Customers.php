@@ -28,6 +28,6 @@ class Customers extends Model
     ];
 
     public $hasMany = [
-        'objects' => Objects::class
+        'objects' => ['OpenMindedIT\FieldEngineeringToolkit\Models\Objects', 'key' => 'customer_id'],
     ];
 }

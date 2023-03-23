@@ -42,3 +42,14 @@ fields:
         useKey: false
         span: auto
         type: taglist
+tabs:
+    fields:
+        planning:
+            label: ''
+            nameFrom: plandate
+            descriptionFrom: description
+            select: plandate
+            span: full
+            readOnly: 1
+            type: relation
+            tab: Planning

@@ -25,3 +25,4 @@
     - 'added github collaborators'
 2.0.5:
     - 'Added company to customers'
+    - 'added ip and mac to objects'

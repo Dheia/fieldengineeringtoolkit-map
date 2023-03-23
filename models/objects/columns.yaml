@@ -34,10 +34,10 @@ columns:
         label: Archive
         type: switch
         sortable: true
-    name:
-        label: Customer
+    company:
+        label: Company
         type: text
         searchable: true
         sortable: true
-        select: name
+        select: company
         relation: customer
