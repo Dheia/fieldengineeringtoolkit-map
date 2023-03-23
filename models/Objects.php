@@ -9,7 +9,6 @@ class Objects extends Model
 {
     use \October\Rain\Database\Traits\Validation;
     use \October\Rain\Database\Traits\SoftDelete;
-    use \October\Rain\Database\Traits\Sluggable;
 
     protected $dates = ['deleted_at'];
 

@@ -42,7 +42,7 @@ fields:
         label: Objects
         span: full
         type: section
-    relatedObjects:
+    objects:
         label: ''
         nameFrom: object_name
         descriptionFrom: description

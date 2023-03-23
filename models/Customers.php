@@ -28,7 +28,6 @@ class Customers extends Model
     ];
 
     public $hasMany = [
-        // 'relatedObjects' => Objects::class,
-        'relatedObjects' => ['OpenMindedIT\FieldEngineeringToolkit\Models\Objects', 'key' => 'parent_id']
+        'objects' => ['OpenMindedIT\FieldEngineeringToolkit\Models\Objects', 'key' => 'customer_id'],
     ];
 }
