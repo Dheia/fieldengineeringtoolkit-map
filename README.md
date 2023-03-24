@@ -2,5 +2,5 @@
 
 Deze plugin is gemaakt door Open Minded IT,<br>
 Developers: Niels van den Dries en Sjoerd Kuijper<br>
-Voor meer informatie ga naar <a href="https://www.openmindedit.nl/">de Open Minded IT</a> Website
+Voor meer informatie ga naar de <a href="https://www.openmindedit.nl/">Open Minded IT</a> Website
 
