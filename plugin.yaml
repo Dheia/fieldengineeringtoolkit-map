@@ -52,3 +52,9 @@ navigation:
                 icon: icon-clock-o
                 permissions:
                     - Manager
+            side-menu-item4:
+                label: Addresses
+                url: openmindedit/fieldengineeringtoolkit/visits
+                icon: icon-home
+                permissions:
+                    - Manager

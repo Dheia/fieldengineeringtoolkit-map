@@ -1,0 +1,23 @@
+fields:
+    adres:
+        label: Address
+        span: auto
+        required: 0
+        type: text
+    visit_date:
+        label: 'Date Visit'
+        mode: date
+        span: auto
+        required: 0
+        type: datepicker
+    owner_name:
+        label: 'Owner Name'
+        span: auto
+        type: text
+    engineer:
+        label: Engineer
+        nameFrom: name
+        descriptionFrom: description
+        select: name
+        span: auto
+        type: relation

@@ -5,7 +5,7 @@ use Model;
 /**
  * Model
  */
-class Engineers extends Model
+class Visits extends Model
 {
     use \October\Rain\Database\Traits\Validation;
     
@@ -19,7 +19,7 @@ class Engineers extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'openmindedit_fieldengineeringtoolkit_engineers';
+    public $table = 'openmindedit_fieldengineeringtoolkit_visitrecords';
 
     /**
      * @var array Validation rules
@@ -27,11 +27,7 @@ class Engineers extends Model
     public $rules = [
     ];
 
-    public $hasMany = [
-        'planning' => ['OpenMindedIT\FieldEngineeringToolkit\Models\Planning', 'key' => 'id'],
-    ];
-
     public $belongsTo = [
-        'visits' => ['OpenMindedIT\FieldEngineeringToolkit\Models\Visits', 'key' => 'id'],
+        'engineer' => Engineers::class
     ];
 }

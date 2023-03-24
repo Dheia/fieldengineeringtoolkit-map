@@ -1,0 +1,19 @@
+columns:
+    adres:
+        label: Address
+        type: text
+        sortable: true
+    owner_name:
+        label: 'Owner Name'
+        type: text
+        sortable: true
+    engineer:
+        label: Engineer
+        type: text
+        sortable: true
+        select: name
+        relation: engineer
+    visit_date:
+        label: 'Visit Date'
+        type: text
+        sortable: true
