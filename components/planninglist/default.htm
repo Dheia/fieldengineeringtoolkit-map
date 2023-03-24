@@ -8,7 +8,7 @@
             {{ carbon(item.plandate)}} 
             - Engineer: {{ item.engineer.name }} 
             - Status: {{ item.status }}</h6>
-        <p class="card-text">Customer: {{ item.customer.name }} {{ item.customer.surname }} - <a href="tel://{{ item.customer.phone }}">{{ item.customer.phone }}</a></p>
+        <p class="card-text">Customer: {{ item.customer.company }} - {{ item.customer.name }} {{ item.customer.surname }} - <a href="tel://{{ item.customer.phone }}">{{ item.customer.phone }}</a></p>
         <p class="card-text">Description: {{ item.description|raw }}</p>
     </div>
 </div>

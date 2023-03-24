@@ -6,7 +6,6 @@ fields:
         select: address
         span: auto
         type: relation
-        tab: 'Tab 1'
     engineer:
         label: Engineer
         span: auto
@@ -15,22 +14,12 @@ fields:
         select: name
         type: relation
         tab: 'Tab 1'
-    status:
-        label: Status
-        options:
-            Open: Open
-            Closed: Closed
-            Replan: Replan
-            Due: Due
-        span: auto
-        required: 1
-        type: balloon-selector
 tabs:
     fields:
         description:
             label: Description
             size: large
-            span: auto
+            span: full
             type: richeditor
             tab: Planning
         plandate:
@@ -41,3 +30,14 @@ tabs:
             type: datepicker
             tab: Planning
             useTimezone: true
+        status:
+            label: Status
+            options:
+                Open: Open
+                Closed: Closed
+                Replan: Replan
+                Due: Due
+            span: auto
+            required: 1
+            type: balloon-selector
+            tab: Planning
