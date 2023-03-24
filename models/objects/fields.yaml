@@ -58,7 +58,7 @@ tabs:
             label: 'Parent Object'
             nameFrom: object_name
             descriptionFrom: 'Parent Object'
-            emptyOption: 'Select Object'
+            emptyOption: 'No Object'
             select: object_name
             span: auto
             type: relation
