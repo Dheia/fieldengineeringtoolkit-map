@@ -7,6 +7,7 @@
     - builder_table_create_openmindedit_fieldengineeringtoolkit_objects.php
     - builder_table_create_openmindedit_fieldengineeringtoolkit_planning.php
     - builder_table_create_openmindedit_fieldengineeringtoolkit_related_objects.php
+    - builder_table_create_openmindedit_fieldengineeringtoolkit_visitrecords.php
 2.0.3:
     - 'Update readme File with latest information.'
     - 'Now creating Multisite support'
@@ -28,3 +29,8 @@
     - 'added ip and mac to objects'
 2.12.0:
     - 'Weekly update'
+2.12.1:
+    - 'Created table openmindedit_fieldengineeringtoolkit_visitrecords'
+    - 'Added Model with relation to engineers'
+    - 'Added descrtiption to Addresses'
+    
