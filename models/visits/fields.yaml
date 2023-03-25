@@ -21,3 +21,8 @@ fields:
         select: name
         span: auto
         type: relation
+    description:
+        label: Description
+        span: full
+        size: small
+        type: richeditor

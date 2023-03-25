@@ -15,6 +15,7 @@ class BuilderTableCreateOpenmindeditFieldengineeringtoolkitVisitrecords extends 
             $table->string('adres')->nullable();
             $table->string('owner_name')->nullable();
             $table->string('engineer_id')->nullable();
+            $table->string('description')->nullable();
         });
     }
     
