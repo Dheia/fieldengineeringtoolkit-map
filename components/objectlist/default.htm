@@ -16,6 +16,8 @@
         <strong>Model:</strong> {{ item.object_model }}<br>
         <strong>IP Address:</strong> {{ item.ip }}<br>
         <strong>MAC Address:</strong> {{ item.mac }}<br>
+        <p><a href="{{ url('object/' ~ object.slug) }}">{{ object.name }}</a></p>
+
     </p>
   </li>
   <li class="list-group-item" style="width: -webkit-fill-available;">
