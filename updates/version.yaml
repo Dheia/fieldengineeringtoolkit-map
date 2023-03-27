@@ -32,4 +32,4 @@
 2.12.1:
     - 'Created table openmindedit_fieldengineeringtoolkit_visitrecords'
     - 'Added Model with relation to engineers'
-    - 'Added descrtiption to Addresses'
+    - 'Added description to Addresses'
