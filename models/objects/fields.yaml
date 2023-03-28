@@ -106,6 +106,13 @@ tabs:
             span: auto
             type: text
             tab: Details
+        code:
+            label: 'Unieke code'
+            span: auto
+            readOnly: 1
+            disabled: 1
+            type: text
+            tab: Details
         beta:
             label: 'Beta, Werkt nog niet'
             span: full

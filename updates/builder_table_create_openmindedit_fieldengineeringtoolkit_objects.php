@@ -30,6 +30,7 @@ class BuilderTableCreateOpenMindedITFieldEngineeringToolkitObjects extends Migra
             $table->string('host')->nullable();
             $table->string('ip')->nullable();
             $table->string('mac')->nullable();
+            $table->string('code')->unique();
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
             $table->timestamp('deleted_at')->nullable();

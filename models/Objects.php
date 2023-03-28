@@ -1,5 +1,6 @@
 <?php namespace OpenMindedIT\FieldEngineeringToolkit\Models;
 
+use Illuminate\Support\Str;
 use Model;
 
 /**
