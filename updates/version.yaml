@@ -36,3 +36,5 @@
 2.12.2:
     - 'Added visit records to customers with relation'
     - 'Unique code added to Objects'
+    - 'Added descrtiption to Addresses'
+    
