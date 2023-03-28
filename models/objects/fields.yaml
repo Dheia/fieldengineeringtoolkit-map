@@ -1,13 +1,13 @@
 fields:
     object_name:
-        label: Name
+        label: 'Object Name'
         span: auto
         type: text
     customer:
-        label: customer
-        nameFrom: customer
-        descriptionFrom: customer
-        select: company
+        label: 'Customer Address'
+        nameFrom: address
+        descriptionFrom: address
+        select: address
         span: auto
         type: relation
     object_description:

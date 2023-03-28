@@ -53,7 +53,7 @@ navigation:
                 permissions:
                     - Manager
             side-menu-item4:
-                label: Addresses
+                label: Visits
                 url: openmindedit/fieldengineeringtoolkit/visits
                 icon: icon-home
                 permissions:
