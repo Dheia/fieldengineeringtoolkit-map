@@ -28,6 +28,7 @@ class Visits extends Model
     ];
 
     public $belongsTo = [
-        'engineer' => Engineers::class
+        'engineer' => Engineers::class,
+        'customer' => Customers::class
     ];
 }

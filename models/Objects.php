@@ -11,15 +11,9 @@ class Objects extends Model
     use \October\Rain\Database\Traits\SoftDelete;
 
     protected $dates = ['deleted_at'];
-
-    /**
-     * @var string The database table used by the model.
-     */
+    
     public $table = 'openmindedit_fieldengineeringtoolkit_objects';
 
-    /**
-     * @var array Validation rules
-     */
     public $rules = [
     ];
 

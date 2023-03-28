@@ -31,5 +31,8 @@
 2.12.1:
     - 'Created table openmindedit_fieldengineeringtoolkit_visitrecords'
     - 'Added Model with relation to engineers'
+    - 'Added description to Addresses'
+2.12.2:
+    - 'Added visit records to customers with relation'
     - 'Added descrtiption to Addresses'
     - builder_table_create_openmindedit_fieldengineeringtoolkit_visitrecords.php

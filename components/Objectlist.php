@@ -6,6 +6,7 @@ use OpenMindedIT\FieldEngineeringToolkit\Models\Objects;
 class Objectlist extends ComponentBase
 {
     public $item;
+    public $object;
     public function componentDetails()
     {
         return [
@@ -39,4 +40,5 @@ class Objectlist extends ComponentBase
         // filter voor gearchiveerde item keuze uit 0 en 1
         $this->item = Objects::where('object_archive', $this->property('object_archive'))->get()->toArray();
     }
+
 }

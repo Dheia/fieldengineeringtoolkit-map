@@ -1,19 +1,17 @@
 fields:
-    adres:
-        label: Address
+    customer:
+        label: Relation
+        nameFrom: address
+        descriptionFrom: 'customer adres'
+        select: address
         span: auto
-        required: 0
-        type: text
+        type: relation
     visit_date:
         label: 'Date Visit'
         mode: date
         span: auto
         required: 0
         type: datepicker
-    owner_name:
-        label: 'Owner Name'
-        span: auto
-        type: text
     engineer:
         label: Engineer
         nameFrom: name

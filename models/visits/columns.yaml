@@ -1,12 +1,10 @@
 columns:
-    adres:
+    address:
         label: Address
         type: text
         sortable: true
-    owner_name:
-        label: 'Owner Name'
-        type: text
-        sortable: true
+        select: address
+        relation: customer
     engineer:
         label: Engineer
         type: text
