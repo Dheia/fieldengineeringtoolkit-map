@@ -21,6 +21,8 @@ class BuilderTableCreateOpenMindedITFieldEngineeringToolkitCustomers extends Mig
             $table->string('mail');
             $table->string('isactive');
             $table->string('visit_id')->nullable();
+            $table->integer('site_id')->nullable();
+            $table->integer('site_root_id')->nullable();
             $table->string('planning_id')->nullable();
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();

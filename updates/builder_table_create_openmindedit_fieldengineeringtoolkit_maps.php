@@ -16,6 +16,8 @@ class BuilderTableCreateOpenMindedITFieldEngineeringToolkitMaps extends Migratio
             $table->integer('maps_zoomlevel');
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
+            $table->integer('site_id')->nullable();
+            $table->integer('site_root_id')->nullable();
         });
     }
     

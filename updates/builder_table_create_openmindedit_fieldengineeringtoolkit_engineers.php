@@ -22,6 +22,8 @@ class BuilderTableCreateOpenMindedITFieldEngineeringToolkitEngineers extends Mig
             $table->string('skills');
             $table->string('visits_id')->nullable();
             $table->string('planning_id')->nullable();
+            $table->integer('site_id')->nullable();
+            $table->integer('site_root_id')->nullable();
         });
     }
     
