@@ -13,6 +13,8 @@ class BuilderTableCreateOpenMindedITFieldEngineeringToolkitRelatedObjects extend
             $table->increments('id')->unsigned();
             $table->string('object_id');
             $table->string('related_object_id');
+            $table->integer('site_id')->nullable();
+            $table->integer('site_root_id')->nullable();
         });
     }
     
