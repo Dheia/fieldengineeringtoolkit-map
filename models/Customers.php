@@ -31,6 +31,6 @@ class Customers extends Model
 
     public $hasMany = [
         'objects' => ['OpenMindedIT\FieldEngineeringToolkit\Models\Objects', 'key' => 'customer_id'],
-        'visits' => ['OpenMindedIT\FieldEngineeringToolkit\Models\Visits', 'key' => 'visit_id']
+        'visits' => ['OpenMindedIT\FieldEngineeringToolkit\Models\Visits']
     ];
 }
