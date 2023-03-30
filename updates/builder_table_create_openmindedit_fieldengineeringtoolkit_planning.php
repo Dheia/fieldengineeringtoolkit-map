@@ -14,6 +14,8 @@ class BuilderTableCreateOpenMindedITFieldEngineeringToolkitPlanning extends Migr
             $table->dateTime('plandate');
             $table->text('description');
             $table->string('status');
+            $table->integer('site_id')->nullable();
+            $table->integer('site_root_id')->nullable();
         });
     }
     

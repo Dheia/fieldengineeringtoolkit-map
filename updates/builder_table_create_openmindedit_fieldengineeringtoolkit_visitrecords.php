@@ -18,6 +18,8 @@ class BuilderTableCreateOpenmindeditFieldengineeringtoolkitVisitrecords extends 
             $table->string('description')->nullable();
             $table->string('visit_id')->nullable();
             $table->string('customer_id')->nullable();
+            $table->integer('site_id')->nullable();
+            $table->integer('site_root_id')->nullable();
             $table->string('customers_id')->nullable();
         });
     }

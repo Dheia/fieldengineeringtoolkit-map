@@ -8,6 +8,9 @@ use Model;
 class Maps extends Model
 {
     use \October\Rain\Database\Traits\Validation;
+    use \October\Rain\Database\Traits\Multisite;
+    
+    protected $propagatable = [];
     
     /**
      * @var string The database table used by the model.

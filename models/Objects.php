@@ -10,6 +10,9 @@ class Objects extends Model
 {
     use \October\Rain\Database\Traits\Validation;
     use \October\Rain\Database\Traits\SoftDelete;
+    use \October\Rain\Database\Traits\Multisite;
+    
+    protected $propagatable = [];
 
     protected $dates = ['deleted_at'];
     
