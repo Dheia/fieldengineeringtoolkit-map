@@ -41,4 +41,5 @@ class Objectlist extends ComponentBase
         $this->item = Objects::where('object_archive', $this->property('object_archive'))->get()->toArray();
     }
 
+    echo $model->photos->getLocalPath();
 }
