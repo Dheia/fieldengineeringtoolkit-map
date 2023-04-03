@@ -8,9 +8,6 @@ use Model;
 class Engineers extends Model
 {
     use \October\Rain\Database\Traits\Validation;
-    use \October\Rain\Database\Traits\Multisite;
-    
-    protected $propagatable = [];
     
     /*
      * Disable timestamps by default.

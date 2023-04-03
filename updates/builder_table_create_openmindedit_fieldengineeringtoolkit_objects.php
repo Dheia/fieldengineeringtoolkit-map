@@ -33,6 +33,7 @@ class BuilderTableCreateOpenMindedITFieldEngineeringToolkitObjects extends Migra
             $table->integer('site_id')->nullable();
             $table->integer('site_root_id')->nullable();
             $table->string('code')->unique();
+            $table->string('slug')->nullable();
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
             $table->timestamp('deleted_at')->nullable();

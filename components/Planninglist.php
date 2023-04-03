@@ -24,9 +24,13 @@ class Planninglist extends ComponentBase
 
     public function onRun()
     {
-        $this->plan = Planning::get()->toArray();
-        $plan = Planning::with('customer','engineer')->get()->toArray();
-       
+        $plan = Planning::with('customer', 'engineer')->get()->toArray();
+        $plan = array_filter($plan, function($item) {
+            return strtotime($item['plandate']) >= strtotime('today');
+        });
+        usort($plan, function($a, $b) {
+            return strtotime($a['plandate']) - strtotime($b['plandate']);
+        });
         $this->page['plan'] = $plan;
     }
 }
