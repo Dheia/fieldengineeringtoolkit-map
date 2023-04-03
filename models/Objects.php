@@ -1,5 +1,6 @@
 <?php namespace OpenMindedIT\FieldEngineeringToolkit\Models;
 
+use October\Rain\Database\Traits\Sluggable;
 use Illuminate\Support\Str;
 use Model;
 
@@ -11,9 +12,10 @@ class Objects extends Model
     use \October\Rain\Database\Traits\Validation;
     use \October\Rain\Database\Traits\SoftDelete;
     use \October\Rain\Database\Traits\Multisite;
+    use \October\Rain\Database\Traits\Sluggable;
     
     protected $propagatable = [];
-
+    protected $slugs = ['slug' => 'code'];
     protected $dates = ['deleted_at'];
     
     public $table = 'openmindedit_fieldengineeringtoolkit_objects';
@@ -21,6 +23,18 @@ class Objects extends Model
     public $rules = [
     ];
 
+    // start Sluggable
+    public $sluggable = [
+        'slug' => ['field' => 'code', 'separator' => '-']
+    ];
+
+    public function generateSlug($value, $attribute = null)
+    {
+        return Str::slug($value);
+    }
+    // eind Sluggable
+    //
+    // start maak unieke code per object
     public function beforeCreate()
     {
         // Generate a unique code for the object
@@ -34,6 +48,7 @@ class Objects extends Model
         // Set the generated code for the object
         $this->code = $code;
     }
+    // eind maak unieke code per object
 
     public $hasMany = [
         // 'relatedObjects' => Objects::class,

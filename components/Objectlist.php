@@ -39,5 +39,27 @@ class Objectlist extends ComponentBase
     {
         // filter voor gearchiveerde item keuze uit 0 en 1
         $this->item = Objects::where('object_archive', $this->property('object_archive'))->get()->toArray();
+        
     }
+
+    public function getObjectDetails($slug)
+{
+    // Find the object with the given slug in the database
+    $object = Objects::where('slug', $slug)->first();
+
+    // Check if the object is found
+    if (!$object) {
+        // If the object is not found, show a 404 error
+        return $this->controller->run('404');
+    }
+
+    // Render the view with the object data
+    $this->object = $object;
+}
+
+public function slugify($string)
+{
+    return Str::slug($string);
+}
+
 }
